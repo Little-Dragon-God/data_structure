@@ -45,12 +45,7 @@ public class SparseArr {
             }
         }
         //遍历输出稀疏数组
-        System.out.println("稀疏数组");
-        for (int i = 0; i < sparseArr.length ; i++) {
-            System.out.printf("%d\t%d\t%d\t\n",sparseArr[i][0],sparseArr[i][1],sparseArr[i][2]);
-        }
-        System.out.println();
-
+        writeSparseArr(sparseArr);
 
         //稀疏数组变为二维数组
         //根据稀疏数组第一行创建二维数组
@@ -67,6 +62,14 @@ public class SparseArr {
             System.out.println();
         }
 
+    }
+
+    private static void writeSparseArr(int[][] sparseArr) {
+        System.out.println("稀疏数组");
+        for (int i = 0; i < sparseArr.length ; i++) {
+            System.out.printf("%d\t%d\t%d\t\n",sparseArr[i][0],sparseArr[i][1],sparseArr[i][2]);
+        }
+        System.out.println();
     }
 
 
