@@ -54,16 +54,16 @@ public class QueueDemo {
 
 class ArrayQueue {
     private int maxSize;
-    private int front;//队列头
-    private int rear;//队列尾
+    private int front;//队列头，分析出front是指向队列头的前一个位置
+    private int rear;//队列尾，指向队列的最后一个元素
     private int[] arr;//存放数据，模拟队列
 
     //创建队列构造器
     public ArrayQueue(int arrMaxSize) {
         maxSize = arrMaxSize;
         arr = new int[maxSize];
-        front = -1;//指向队列头部，分析出front是指向队列头的前一个位置
-        rear = -1;//指向队列尾，指向队列的最后一个元素
+        front = -1;//指向队列头部
+        rear = -1;//指向队列尾
     }
 
     //判断队列是否满了
